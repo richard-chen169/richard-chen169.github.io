@@ -11,35 +11,89 @@
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(function(){
+
+setTimeout(function() {
+  $("#facebook").fadeIn(500);
+}, 1500);
+
+setTimeout(function() {
+  $("#github").fadeIn(500);
+}, 2000);
+
+setTimeout(function() {
+  $("#linkedin").fadeIn(500);
+}, 2500);
+
+setTimeout(function() {
+  $("#flickr").fadeIn(500);
+}, 3000);
+
+setTimeout(function() {
+  $("#dreamstale").fadeIn(500);
+}, 3500);
+
+setTimeout(function() {
+  $("#youtube").fadeIn(500);
+}, 4000);
+   
+});
+</script>
+
 <body>
 	<div id="parallax">
-		<h1 class="header" id="name">Richard Chen</h1>
-		<h2 class="header" id="description">student developer photographer</h2>
+
+		<div class = "animated fadeInDown">
+			<h1 class="header" id="name">Richard Chen</h1>
+		</div>
+
+		<div class = "animated fadeInUp">
+			<h1 class="header" id="description">student developer photographer</h1>
+		</div>
+
 		<div id="links">
 
 			<div class="tooltip">
-				<a target="_" href="https://www.facebook.com/richard.p.chen1" title="facebook" class="tooltip"><span title=""><img class="icon" id="logopic" src="pictures/facebook.png" height=60px width=60px></span></a>
+				<div id="facebook" style="display:none;">
+					<a target="_" href="https://www.facebook.com/richard.p.chen1" title="facebook" class="tooltip"><span title=""><img class="icon" id="logopic" src="pictures/facebook.png" height=65px width=65px></span></a>
+				</div>
 			</div>
 
 			<div class="tooltip">
-				<a target="_" href="https://github.com/richard-chen169" title="github" class="tooltip"><span title=""><img class="icon" id="logopic" src="pictures/github.png" height=60px width=60px></span></a>
+
+				<div id="github" style="display:none;">
+					<a target="_" href="https://github.com/richard-chen169" title="github" class="tooltip"><span title=""><img class="icon" id="logopic" src="pictures/github.png" height=65px width=65px></span></a>
+				</div>
 			</div>
 
 			<div class="tooltip">
-				<a target="_" href="https://www.linkedin.com/in/richard-chen-4593bb142/" title="linkedin" class="tooltip"><span title=""><img class="icon" id="logopic" src="pictures/linkedin.png" height=60px width=60px></span></a>
+				<div id="linkedin" style="display:none;">
+					<a target="_" href="https://www.linkedin.com/in/richard-chen-4593bb142/" title="linkedin" class="tooltip"><span title=""><img class="icon" id="logopic" src="pictures/linkedin.png" height=65px width=65px></span></a>
+				</div>
 			</div>
 			
 			<div class="tooltip">
-				<a target="_" href="https://www.flickr.com/people/154301761@N07/" title="flickr" class="tooltip"><span title=""><img class="icon" id="logopic" src="pictures/flickr.png" height=60px width=60px></span></a>
+				<div id="flickr" style="display:none;">
+					<a target="_" href="https://www.flickr.com/people/154301761@N07/" title="flickr" class="tooltip"><span title=""><img class="icon" id="logopic" src="pictures/flickr.png" height=65px width=65px></span></a>
+				</div>
 			</div>
-			
+				
 			<div class="tooltip">
-				<a target="_" href="https://www.instagram.com/not_richardchen/" title="instagram" class="tooltip"><span title=""><img class="icon" id="logopic" src="pictures/instagram.png" height=60px width=60px></span></a>
+				<div id="dreamstale" style="display:none;">
+					<a target="_" href="mailto:whoaitsrichard14@gmail.com" title="email" class="tooltip"><span title=""><img class="icon" id="logopic" src="pictures/dreamstale.png" height=65px width=65px></span></a>
+				</div>
 			</div>
-			
+
 			<div class="tooltip">
-				<a target="_" href="mailto:whoaitsrichard14@gmail.com" title="email" class="tooltip"><span title=""><img class="icon" id="logopic" src="pictures/dreamstale.png" height=60px width=60px></span></a>
+				<div id="youtube" style="display:none;">
+					<a target="_" href="https://www.youtube.com/channel/UCXCgxPLZV8QcKN8JP0pJmHQ" title="youtube" class="tooltip"><span title=""><img class="icon" id="logopic" src="pictures/youtube.png" height=65px width=65px></span></a>
+				</div>
 			</div>
+
 		</div>
 	</div>
 	<div class="about">
@@ -57,9 +111,8 @@ Grazie alla conversione dell'energia elettrica in energia meccanica, le variazio
 Nell'ECG a 12 derivazioni, quattro elettrodi sono posizionati sugli arti del paziente e sei sulla superficie del torace. La grandezza complessiva del potenziale elettrico del cuore viene quindi misurata da dodici diversi angoli ("derivazioni") e viene registrata per un periodo di tempo (in genere dieci secondi). In questo modo, l'ampiezza e la direzione generali della depolarizzazione elettrica del cuore vengono catturate in ogni momento e per tutto il ciclo cardiaco. </p>
 
 
-	</div>
+
+
 
 </body>
-
-<a href="#" title="Text text text text" class="tooltip"><span title="More">CSS3     Tooltip</span></a>
 </html>

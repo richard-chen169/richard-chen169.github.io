@@ -34,7 +34,7 @@ body {
 }
 
 #links {
-
+	position:relative;
 	text-align: center;
 	margin: auto;
 	height: 10vh;
@@ -67,7 +67,9 @@ body {
 	line-height:12vh;
 	padding-top:35vh;
 	min-width: 700px;
+
 }
+
 #description {
 	color: #1B9CFC;
 	font-size: 30px;
@@ -76,8 +78,41 @@ body {
 	line-height: 23vh;
 	min-width: 700px;
 
+
 }
 
+
+#facebook{
+	position:absolute;
+	top: -20px;
+	right: 180px;
+	
+}
+#github{
+	position:absolute;
+	top: -20px;
+	right: 90px;
+}
+#linkedin{
+	position:absolute;
+	top: -20px;
+	right: 0;
+}
+#flickr{
+	position:absolute;
+	top: -20px;
+	right: -90px;
+}
+#dreamstale{
+	position:absolute;
+	top: -20px;
+	right: -180px;
+}
+#youtube{
+	position:absolute;
+	top: -20px;
+	right: -270px;
+}
 
 .about {
 	text-align: center;
@@ -106,24 +141,87 @@ body {
 
     color: black;
     text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
+
     font-family: 'Comfortaa', cursive;
     
 
     position: absolute;
     z-index: 1;
+    font-size: 20px;
     top: 100%;
     left: 50%;
     margin-left: -60px;
-    -webkit-transition: opacity 0.75s ease-in-out;
+    -webkit-transition: opacity 2s ease-in-out;
     transition: opacity 0.75s ease-in-out;
-
-
-
-
 
 }
 .tooltip:hover:after {
     opacity: 1;
 }
+
+
+
+.animated {
+	background-repeat: no-repeat;
+	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+    -webkit-transform: translateY(-60px);
+	}
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-60px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+.fadeInDown {
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+}
+
+
+
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+    -webkit-transform: translateY(50px);
+	}
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(-200px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(-300px);
+	}
+}
+
+.fadeInUp {
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}
+
