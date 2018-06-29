@@ -118,7 +118,7 @@ body {
 	text-align: center;
 	font-family: 'Comfortaa', cursive;
 	font-size: 40px;
-	margin-top: 40vh;
+	margin-top:2vh;
 }
 
 #text {
@@ -236,6 +236,13 @@ body {
 	height:350px;
 	width:350px;
 	position: absolute;
-	margin-left:740px;
+/*	margin-left:740px;*/
 	margin-top:20px;
+}
+
+
+.wrapper {
+	position: relative;
+	
+	margin: 0 auto;
 }
