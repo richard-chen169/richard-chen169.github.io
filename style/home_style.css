@@ -75,7 +75,7 @@ body {
 	font-size: 30px;
 	font-weight: normal;
 	font-family: 'Comfortaa', cursive;
-	line-height: 23vh;
+	line-height: 23.5vh;
 	min-width: 700px;
 
 
@@ -118,15 +118,18 @@ body {
 	text-align: center;
 	font-family: 'Comfortaa', cursive;
 	font-size: 40px;
+	margin-top: 40vh;
 }
 
 #text {
-	text-align: center;
-	margin-right: 240px;
-	margin-left: 240px;
-	left: 0;
+	text-align: left;
+	margin-right: 500px;
+	margin-left: 500px;
+
 	font-family: 'Raleway', sans-serif;
-	font-size: 25px;
+	font-size: 20px;
+
+	
 }
 
 .tooltip {
@@ -225,3 +228,14 @@ body {
 	animation-name: fadeInUp;
 }
 
+
+
+#picture {
+
+
+	height:350px;
+	width:350px;
+	position: absolute;
+	margin-left:740px;
+	margin-top:20px;
+}
