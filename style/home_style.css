@@ -12,6 +12,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.8;
+    position:relative;
 }
 
 
@@ -39,7 +40,7 @@ body {
 	margin: auto;
 	height: 10vh;
 	width: 60vh;
-	margin-top: -15vh;
+	
 
 
 }
@@ -64,20 +65,24 @@ body {
 	/*font-family: 'Raleway', sans-serif;*/
 	color: #1B9CFC;
 	font-size: 70px;
-	line-height:12vh;
+
 	padding-top:35vh;
 	min-width: 700px;
-
+	text-align:center;
 }
 
 #description {
 	color: #1B9CFC;
+	position:relative;
 	font-size: 30px;
 	font-weight: normal;
 	font-family: 'Comfortaa', cursive;
-	line-height: 23.5vh;
-	min-width: 700px;
 
+
+	
+	min-width: 700px;
+	margin-top:-5vh;
+	text-align:center;
 
 }
 
@@ -183,16 +188,7 @@ body {
   }
 }
 
-@keyframes fadeInDown {
-	0% {
-		opacity: 0;
-		transform: translateY(-60px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0px);
-	}
-}
+
 
 .fadeInDown {
 	-webkit-animation-name: fadeInDown;
@@ -204,28 +200,20 @@ body {
 @-webkit-keyframes fadeInUp {
 	0% {
 		opacity: 0;
-    -webkit-transform: translateY(50px);
+    -webkit-transform: translateY(60px);
 	}
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
+    -webkit-transform: translateY(0px);
   }
 }
 
-@keyframes fadeInUp {
-	0% {
-		opacity: 0;
-		transform: translateY(-200px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(-300px);
-	}
-}
+
 
 .fadeInUp {
 	-webkit-animation-name: fadeInUp;
 	animation-name: fadeInUp;
+
 }
 
 
@@ -245,4 +233,13 @@ body {
 	position: relative;
 	
 	margin: 0 auto;
+}
+
+.intro {
+	position:relative;
+
+
+	margin-left:250px;
+	margin-right:250px;
+
 }
