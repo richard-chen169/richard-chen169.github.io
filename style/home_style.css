@@ -251,7 +251,7 @@ body {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	position: absolute;
+	position: relative;
 	top: 0;
 	width: 100%;  
 
@@ -272,6 +272,7 @@ li a {
 	font-size:110%;
 	color: #273c75;
 	text-align: center;
+	margin:0;
 	padding: 25px 26px;
 	text-decoration: none;
 }
