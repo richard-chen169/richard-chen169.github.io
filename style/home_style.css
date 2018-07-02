@@ -120,6 +120,7 @@ body {
 }
 
 .about {
+	position:relative;
 	text-align: center;
 	font-family: 'Comfortaa', cursive;
 	font-size: 40px;
@@ -133,7 +134,7 @@ body {
 
 	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
-
+	min-width: 700px;
 	
 }
 
@@ -223,8 +224,9 @@ body {
 
 	height:350px;
 	width:350px;
-	position: absolute;
-/*	margin-left:740px;*/
+
+	position: relative;
+
 	margin-top:20px;
 }
 
@@ -242,4 +244,39 @@ body {
 	margin-left:250px;
 	margin-right:250px;
 
+}
+
+
+.nav-bar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;  
+
+	overflow: hidden;
+	opacity: 1;
+	z-index:3;
+
+
+}
+.nav_element {
+	display: inline; 
+	float: left;
+}
+
+li a {
+	display: block;
+	font-family: 'Comfortaa', cursive;
+	font-size:110%;
+	color: #273c75;
+	text-align: center;
+	padding: 25px 26px;
+	text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+	opacity:0.2;
 }
