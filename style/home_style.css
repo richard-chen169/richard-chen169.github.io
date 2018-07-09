@@ -240,7 +240,7 @@ body {
 .intro {
 	position:relative;
 
-
+	
 	margin-left:250px;
 	margin-right:250px;
 
@@ -251,11 +251,11 @@ body {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	position: relative;
+	position: absolute;
 	top: 0;
 	width: 100%;  
 
-	overflow: visible;
+	overflow: hidden;
 	opacity: 1;
 	z-index:3;
 
