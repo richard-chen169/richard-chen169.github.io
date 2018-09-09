@@ -5,6 +5,8 @@ body {
 }
 
 #parallax {
+	margin: 0;
+	margin-top: -47;
 	background-image: url('../pictures/contrailhq.png');
     height: 100%;
     background-attachment: fixed;
@@ -18,6 +20,7 @@ body {
 
 .header {
 	position: absolute;
+	margin: 0;
     top: 0;
     bottom: 0;
     left: 0;
@@ -120,7 +123,7 @@ body {
 }
 
 .about {
-	position:relative;
+	position: relative;
 	text-align: center;
 	font-family: 'Comfortaa', cursive;
 	font-size: 40px;
@@ -241,6 +244,7 @@ body {
 	position:relative;
 
 	
+
 	margin-left:250px;
 	margin-right:250px;
 
@@ -250,7 +254,7 @@ body {
 .nav-bar {
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
+
 	position: absolute;
 	top: 0;
 	width: 100%;  
@@ -273,7 +277,7 @@ li a {
 	color: #273c75;
 	text-align: center;
 	margin:0;
-	padding: 25px 26px;
+	padding: 25px 25px;
 	text-decoration: none;
 }
 
