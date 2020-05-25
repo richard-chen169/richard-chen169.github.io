@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Filters and Frequencies</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v1.2.1
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js">
+  </script>
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Richard Chen</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.youtube.com/channel/UCXCgxPLZV8QcKN8JP0pJmHQ" class="youtube"><i class="bx bxl-youtube"></i></a>
+          <a href="https://www.facebook.com/richard.p.chen1/" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/not_richardchen/" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/richardchen169/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li class="active"><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="index.html#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="index.html#portfolio"><i class="bx bx-book-content"></i>Projects</a></li>
+          <li><a href="index.html#contact"><i class="bx bx-envelope"></i> Contact</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Filters and Frequencies</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Filters</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+<!--     <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-details-container">
+
+          <div class="owl-carousel portfolio-details-carousel">
+            <img src="assets/img/portfolio-details-1.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio-details-2.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio-details-3.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: Web design</li>
+              <li><strong>Client</strong>: ASU Company</li>
+              <li><strong>Project date</strong>: 01 March, 2020</li>
+              <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="portfolio-description">
+          <h2>This is an example of portfolio detail</h2>
+          <p>
+            Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+          </p>
+        </div>
+
+      </div>
+    </section> --><!-- End Portfolio Details Section -->
+
+
+    <!--Begin Portfolio Details Section -->
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+<div class="container">
+  <h1>Part 1.1</h1>
+  <p>You can use some simple kernels in order to get great insights of images. Two examples we explore in this part are the horizontal and vertical edge kernels. The images below show the original image of the cameraman, the horizontal derivative, vertical derivative, and the gradient magnitude in respective orders. The gradient magnitude can be calculated by using the formula \(\sqrt{\frac{df}{dx}^2 + \frac{df}{dy}^2}\).This gives a combination of both horizontal and vertical edges to (theoretically) give all edges in an image. The threshold for the gradient magnitude was hand-tuned. I found filtering out any pixels below 0.178 in magnitude gave a pretty good result.</p>
+
+
+
+  <h2>Cameraman</h2>
+
+<div class="row">
+  <div class="column">
+    <p>Original</p>
+    <img src="assets/img/portfolio/filters/cameraman.png" style="width:100%">
+  </div>
+  <div class="column">
+    <p>Horizontal Derivative</p>
+    <img src="assets/img/portfolio/filters/camera_horizontal.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <p>Vertical Derivative</p>
+    <img src="assets/img/portfolio/filters/camera_vertical.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <p>Gradient Magnitude</p>
+    <img src="assets/img/portfolio/filters/camera_mag.jpg" style="width:100%">
+  </div>
+</div>
+
+  <h1>Part 1.2</h1>
+  <p>Sometimes it's better to actually blur an image slightly with a gaussian kernel before looking for edges. This allows us to remove some noise and other bad artifacts before we take the partial derivatives. This ideally gives a better result for finding edges in a picture. We can see that the partial derivatives seem more "clean" in a sense, and better resemble the actual visible edges seen in the original picture and are also much "stronger" than part 1.1. We also see less noise in the gradient magnitude of the image in the grass and clearer edges. The handpicked threshold was slightly different: 0.13</p>
+  <div class="row">
+    <div class="column">
+      <p>Blurred image</p>
+      <img src="assets/img/portfolio/filters/camera_blur.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Horizontal Derivative</p>
+      <img src="assets/img/portfolio/filters/camera_blur_h.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Vertical Derivative</p>
+      <img src="assets/img/portfolio/filters/camera_blur_v.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Gradient Magnitude</p>
+      <img src="assets/img/portfolio/filters/camera_blur_mag.jpg" style="width:100%">
+    </div>
+  </div>
+  <p> We can speed up this calculation by combining the gaussian blur convolution with the horizontal and vertical derivative convolutions into one convolution. This reduces the number of convolutions from 2 to 1, twice the efficiency (I think)!</p>
+  <div class="row">
+    <div class="column">
+      <p>DoG Horizontal</p>
+      <img src="assets/img/portfolio/filters/dog_camera_h.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>DoG Vertical</p>
+      <img src="assets/img/portfolio/filters/dog_camera_v.jpg" style="width:100%">
+    </div>
+  </div>
+  <p> We can first verify visually that they are the exact same, and then in my ipython notebook, I have shown that every pixel is the exact same. So we can answer the question that yes, the derivative of Gaussians does indeed give the same results as first convolving with a Gaussian, and then with an edge detector. The commutability of convolution works!</p>
+
+  <h1>Part 1.3 - Image Straightening</h1>
+  <p> One can also straighten images by using the \(\frac{df}{dx}\) and \(\frac{df}{dy}\) derivatives of a picture. This can be done by using the formula \(\arctan \theta = \frac{-\frac{df}{dy}}{\frac{df}{dx}} \). One can apply this after getting the derivatives of an image. This gives the angles at every point in an image, and we can then put this in a histogram. One thing to keep in mind is this gives the angle in radians, so we must convert back to degrees multiplying by \(\frac{180}{\pi}\). We can look at the histogram and see which angle appears most often. It's likely that the angle which appears most often is either vertical or horizontal. So for example of the bin at 3 degrees is largest, than the image is probably tilted by 3 degrees. We can make this a little more sophisticated by checking bins that are 90 degrees apart as well in order to capture the full essence of vertical and horizontal edges. So for example, I look at bins at -89 degrees, 1 degrees, and 91 degrees. Then I check bins at -88, 2, and 92 and so on. I assume that tilts are less than 20 degrees in order to boost efficiency of my algorithm. Some results are shown below.</p>
+  <div class="row">
+    <div class="column">
+      <p>Facade Original</p>
+      <img src="assets/img/portfolio/filters/facade.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Facade rotated</p>
+      <img src="assets/img/portfolio/filters/facade_straight.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Facade angle histogram</p>
+      <img src="assets/img/portfolio/filters/facade_histogram.png" style="width:100%">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <p>Friends Original</p>
+      <img src="assets/img/portfolio/filters/friends.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Friends rotated</p>
+      <img src="assets/img/portfolio/filters/friends_straight.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Friends angle histogram</p>
+      <img src="assets/img/portfolio/filters/friends_histogram.png" style="width:100%">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <p>Wall Original</p>
+      <img src="assets/img/portfolio/filters/wall.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Wall rotated</p>
+      <img src="assets/img/portfolio/filters/wall_straight.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Wall angle histogram</p>
+      <img src="assets/img/portfolio/filters/wall_histogram.png" style="width:100%">
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="column">
+      <p>Rodolfo Original</p>
+      <img src="assets/img/portfolio/filters/dolph.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Rodolfo rotated</p>
+      <img src="assets/img/portfolio/filters/dolph_straight.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Rodolfo angle histogram</p>
+      <img src="assets/img/portfolio/filters/dolph_histogram.png" style="width:100%">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <p>Wizards Original</p>
+      <img src="assets/img/portfolio/filters/wizards.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Wizards rotated</p>
+      <img src="assets/img/portfolio/filters/wizards_straight.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Wizards angle histogram</p>
+      <img src="assets/img/portfolio/filters/wizards_histogram.png" style="width:100%">
+    </div>
+  </div>
+  <p>It seems that my algorithm does not work very well for the last two pictures. For Rodolfo, it may be because I took the picture near a corner of a wall and there are many lines and angles the algorithm is considering. The histogram shows an overwhelming number of angles around 0 degrees, so it could be that is the case but the person is not very straight, which is harder for the algorithm to detect. For the wizards picture below that, there are many things going on and circular elements as well, which also makes it hard for the algorithm to determine what is exactly horizontal or not.</p>
+
+  <h1>Part 2.1 - Image Sharpening</h1>
+  <p> We can use a laplacian filter to get the high frequencies of an image. We can then add these frequencies back to the original image in order to emphasize them. This can give an illusion of a "sharper" image even though no new information has been added.</p>
+
+  <div class="row">
+    <div class="column">
+      <p>Taj mahal original</p>
+      <img src="assets/img/portfolio/filters/taj.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Taj Mahal Sharpened</p>
+      <img src="assets/img/portfolio/filters/taj_sharp.jpg" style="width:100%">
+    </div>
+  </div>
+</article>
+
+  <div class="row">
+    <div class="column">
+      <p>Legs original</p>
+      <img src="assets/img/portfolio/filters/legs.png" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Legs sharpened</p>
+      <img src="assets/img/portfolio/filters/legs_sharp.jpg" style="width:100%">
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="column">
+      <p>White dog original</p>
+      <img src="assets/img/portfolio/filters/white_dog.png" style="width:100%">
+    </div>
+    <div class="column">
+      <p>White dog blurred</p>
+      <img src="assets/img/portfolio/filters/white_dog_blur.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>White dog sharpened</p>
+      <img src="assets/img/portfolio/filters/white_dog_sharp.jpg" style="width:100%">
+    </div>
+  </div>
+
+  <p>We can see some noticable improvement in the provided taj mahal picture, albeit small. Focusing on the walkway and the edges of the building, we can see it appears slightly more clear than the original image. For the legs, it's possible this image is too blurred to truly save, but in the upper thigh on the right, we do see it to be a little bit more "clear" than the original image. And finally, I test my algorithm on a dog. I first blur it, and then try to sharpen the blured image. Although the sharpened image can't be restored fully to the original image (because information has been lost which can not be regained), we do see improvement from the blurred image.</p>
+
+  <h1>Part 2.2 Hybrid Images</h1>
+
+  <p> We can also merge images by combining ones high frequencies and anothers low frequencies to make some wacky results! First you have to align the images (which the code was thankfully provided for) and then you get the high frequencies of one image, low frequencies of another, and combine them! Then one image should appear when close, and a separate one should appear when far away! That's because when close up you will see the high frequencies, and farther away you will see the lower frequencies.</p>
+
+  <div class="row">
+    <div class="column">
+      <p>Barack Obama</p>
+      <img src="assets/img/portfolio/filters/obama.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Bill Clinton</p>
+      <img src="assets/img/portfolio/filters/clinton.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Bill Bama</p>
+      <img src="assets/img/portfolio/filters/obama_clinton.jpg" style="width:100%">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <p>Roger Federer</p>
+      <img src="assets/img/portfolio/filters/roger.jpeg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Goat</p>
+      <img src="assets/img/portfolio/filters/goat.jpeg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Roger is the GOAT</p>
+      <img src="assets/img/portfolio/filters/roger_goat.jpg" style="width:100%">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <p>Lebron James</p>
+      <img src="assets/img/portfolio/filters/lebron.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Luka Doncic</p>
+      <img src="assets/img/portfolio/filters/doncic.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Lebron Doncic</p>
+      <img src="assets/img/portfolio/filters/lebron_doncic.jpg" style="width:100%">
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="column">
+      <p>Happy Hillary</p>
+      <img src="assets/img/portfolio/filters/happy_clinton.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Sad Hillary</p>
+      <img src="assets/img/portfolio/filters/sad_clinton.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Happy Sad Hillary</p>
+      <img src="assets/img/portfolio/filters/happy_sad.jpg" style="width:100%">
+    </div>
+  </div>
+
+  <p> My personal favorite was the merging between president's Barack Obama and Bill Clinton. It looks the best to me. I think that the one of Roger Federer and the Goat is not very sucessful, and would label it as a failure. Even when looking closesly, the goats high frequencies don't seem to be prevalent enough and Roger's stunning features still stand out to me. I think I would need to play around more with the weights of how much of each image I'm adding to each other in order to make it succesful. It could also be because of just how different the two images are. The other photos I chose are comparing different people, whereas here I'm comparing a person with a goat, so it's just more difficult to mix and match between the two of them. Let's check out the log magnitudes of the fourier transforms.</p>
+  <div class="row">
+    <div class="column">
+      <p>Log Magnitude Obama</p>
+      <img src="assets/img/portfolio/filters/obama_log.png" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Log Magnitude Clinton</p>
+      <img src="assets/img/portfolio/filters/clinton_log.png" style="width:100%">
+    </div>
+    <div class="column">
+      <p>Log Magnitude Low pass Obama </p>
+      <img src="assets/img/portfolio/filters/lowbama_log.png" style="width:100%">
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <p>Log Magnitude High pass Clinton </p>
+      <img src="assets/img/portfolio/filters/highclinton_log.png" style="width:100%">
+    </div>
+        <div class="column">
+      <p>Log Magnitude Billbama </p>
+      <img src="assets/img/portfolio/filters/billbama_log.png" style="width:100%">
+    </div>
+  </div>
+
+<p> We can see some of the filters in effect. For Obama, we see that the filtered low pass version of him emphasizes the lower magnitudes of the original log transform. And vice verca for clinton as well. It focuses on the high frequency stuff. And then if we look at the fourier transform of the merged picture, it does seem to incorporate components from the low frequency obama fourier transform, and the high frequency clinton transform. yay it works.</p>
+
+<h1>Part 2.3 Gaussian and Laplacian Stacks</h1>
+<p>We can reveal structures at different resolutions for some interesting paintings. Let's first look at the Dali painting.</p>
+
+  <div class="row">
+    <div class="column">
+      <p>Original Dali </p>
+      <img src="assets/img/portfolio/filters/dali.jpg" style="width:100%">
+    </div>
+  <div class="column">
+      <p>1st Gaussian step</p>
+      <img src="assets/img/portfolio/filters/dali0.jpg" style="width:100%">
+    </div>
+  <div class="column">
+      <p>2nd Gaussian step</p>
+      <img src="assets/img/portfolio/filters/dali1.jpg" style="width:100%">
+    </div>
+  <div class="column">
+      <p>2nd Gaussian step</p>
+      <img src="assets/img/portfolio/filters/dali2.jpg" style="width:100%">
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="column">
+      <p>Original Dali </p>
+      <img src="assets/img/portfolio/filters/dali.jpg" style="width:100%">
+    </div>
+  <div class="column">
+      <p>1st Laplacian step</p>
+      <img src="assets/img/portfolio/filters/dalil1.jpg" style="width:100%">
+    </div>
+  <div class="column">
+      <p>2nd Laplacian step</p>
+      <img src="assets/img/portfolio/filters/dalil2.jpg" style="width:100%">
+    </div>
+  </div>
+
+<p> Wow, very cool! We can see in the first gaussian pass of the painting, we clearly see Gala gazing at the sea. But then after a couple iterations, all we see is noble Lincoln! We can see this structure has been taken away in the laplacian stacks. In the first pass, we see a clear outline of gala, which is taken away between the 1st and 2nd Gaussian stacks. Now let's try this with the Mona Lisa.</p>
+
+
+  <div class="row">
+    <div class="column">
+      <p>Original Mona </p>
+      <img src="assets/img/portfolio/filters/mona.jpg" style="width:100%">
+    </div>
+  <div class="column">
+      <p>1st Gaussian step</p>
+      <img src="assets/img/portfolio/filters/mona0.jpg" style="width:100%">
+    </div>
+  <div class="column">
+      <p>2nd Gaussian step</p>
+      <img src="assets/img/portfolio/filters/mona1.jpg" style="width:100%">
+    </div>
+  <div class="column">
+      <p>2nd Gaussian step</p>
+      <img src="assets/img/portfolio/filters/mona2.jpg" style="width:100%">
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="column">
+      <p>Original Mona </p>
+      <img src="assets/img/portfolio/filters/mona.jpg" style="width:100%">
+    </div>
+  <div class="column">
+      <p>1st Laplacian step</p>
+      <img src="assets/img/portfolio/filters/monal1.jpg" style="width:100%">
+    </div>
+  <div class="column">
+      <p>2nd Laplacian step</p>
+      <img src="assets/img/portfolio/filters/monal2.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>2nd Laplacian step</p>
+      <img src="assets/img/portfolio/filters/monal3.jpg" style="width:100%">
+    </div>
+  </div>
+<p> Yeet. It worked pretty well. You can see the differences in expression in the laplacian steps. In the second step you can see the smile, and in the first, the slight frown. In the second you can also see she's slightly looking towards the side, while in the first laplacian step she seems to be looking right at you. This is the cause of the mysticism from the painting!</p>
+<br>
+<p>Now let's check it out on the obama clinton hybrid I made in the previous part.</p>
+
+<div class="row">
+    <div class="column">
+      <p>Original Billbama </p>
+      <img src="assets/img/portfolio/filters/obama_clinton.jpg" style="width:100%">
+    </div>
+  <div class="column">
+      <p>1st Gaussian step</p>
+      <img src="assets/img/portfolio/filters/bill1.jpg" style="width:100%">
+    </div>
+  <div class="column">
+      <p>2nd Gaussian step</p>
+      <img src="assets/img/portfolio/filters/bill2.jpg" style="width:100%">
+    </div>
+  <div class="column">
+      <p>2nd Gaussian step</p>
+      <img src="assets/img/portfolio/filters/bill3.jpg" style="width:100%">
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="column">
+      <p>Original Billbama </p>
+      <img src="assets/img/portfolio/filters/obama_clinton.jpg" style="width:100%">
+    </div>
+  <div class="column">
+      <p>1st Laplacian step</p>
+      <img src="assets/img/portfolio/filters/billl1.jpg" style="width:100%">
+    </div>
+  <div class="column">
+      <p>2nd Laplacian step</p>
+      <img src="assets/img/portfolio/filters/billl2.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <p>2nd Laplacian step</p>
+      <img src="assets/img/portfolio/filters/billl3.jpg" style="width:100%">
+    </div>
+  </div>
+
+<p> Very dank. We can see that as we go down the gaussian stack, we see less of clinton and more of obama. Also when we look at the laplacian stack, we can see that we first remove the high frequencies of clinton, which is why he dissappears down the gaussian stack.</p>
+
+<h1>Part 2.4 Merging Images</h1>
+<p> Now we can use laplacian and gaussian stacks to actually create merged images. Let's first try this out on the example apple and orange provided by the class.</p>
+  <div class="row">
+    <div class="column">
+      <p>Orange</p>
+      <img src="assets/img/portfolio/filters/spline/orange.png" style="width:100%">
+    </div>
+  <div class="column">
+      <p>Apple</p>
+      <img src="assets/img/portfolio/filters/spline/apple.png" style="width:100%">
+    </div>
+  <div class="column">
+      <p>Orapple</p>
+      <img src="assets/img/portfolio/filters/orapple.jpg" style="width:100%">
+    </div>
+
+  </div>
+
+  <p>Now let's merge a photo of me and my roommate.</p>
+  <div class="row">
+    <div class="column">
+      <p>Richard</p>
+      <img src="assets/img/portfolio/filters/richard.jpg" style="width:100%">
+    </div>
+  <div class="column">
+      <p>Apple</p>
+      <img src="assets/img/portfolio/filters/raymond.jpg" style="width:100%">
+    </div>
+  <div class="column">
+      <p>Raychard</p>
+      <img src="assets/img/portfolio/filters/raychard.jpg" style="width:100%">
+    </div>
+  </div>
+<p> Works out OK, doesn't look too bad but I believe the left side of the photo does look much better in my humble opinion.</p>
+
+  <p>And for my final trick, I will merge my face with 2 sunny side up eggs.</p>
+  <div class="row">
+    <div class="column">
+      <p>Eggs</p>
+      <img src="assets/img/portfolio/filters/eggs.jpg" style="width:100%">
+    </div>
+  <div class="column">
+      <p>Richard</p>
+      <img src="assets/img/portfolio/filters/richard.jpg" style="width:100%">
+    </div>
+  <div class="column">
+      <p>Egg Richard</p>
+      <img src="assets/img/portfolio/filters/richard_egg_final.jpg" style="width:100%">
+    </div>
+  <div class="column">
+      <p>Egg Mask</p>
+      <img src="assets/img/portfolio/filters/mask_egg.jpg" style="width:100%">
+    </div>
+  </div>
+<p> The merge of these photos actually isn't very good, but when I saw the results I felt compelled to share them because this just looks ridiculous. I think that my algorithm for merging pictures is actually satisfactory given its results with the orange apple and me and my roommate, however I think there's just too much of a difference between me and the egg. The original egg picture has such a clean white surface which makes my eyes stand out too much. I would have to play more with lighting and brightness in order for it to better merge my eyes inside the egg yolks. Regardless, it produces an...interesting result. I used the shown mask as the Gaussian Mask for my merging algorithm.</p>
+
+<h1>Reflections</h1>
+<p>The most important thing I learned in this project is that sometimes your algorithm can work exactly how you want it, but the images you're testing them out on just will not cooperate. For example, when I was testing my straightening algorithm on images, I would choose pictures that appeared, to me, very obviously skewed. However, the histogram showing the calculated angles in the picture would overwhelming be binned at 0 degrees to my frustration. I was indeed choosing the right bin, but the angles themselves were wrong. That signaled to me that the proposed algorithm may be a little too simple for some more complex pictures. The same thing happened for my merging (with the egg and face). I think my algorithm works fine, but it is really dependent on what images I use it on. It's really really difficult to make a great algorithm that works for a large general dataset, and I think it's somewhat acceptable for algorithms to have failures as long as there still exists an application for them. So I will celebrate my sucesses for this project, and will not be too sad about the failures while still keeping them in mind.</p>
+
+
+
+</div>
+
+    <!-- End Portfolio Details Section -->
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

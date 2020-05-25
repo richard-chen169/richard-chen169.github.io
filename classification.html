@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Classification</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v1.2.1
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Richard Chen</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.youtube.com/channel/UCXCgxPLZV8QcKN8JP0pJmHQ" class="youtube"><i class="bx bxl-youtube"></i></a>
+          <a href="https://www.facebook.com/richard.p.chen1/" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/not_richardchen/" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/richardchen169/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li class="active"><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="index.html#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="index.html#portfolio"><i class="bx bx-book-content"></i>Projects</a></li>
+          <li><a href="index.html#contact"><i class="bx bx-envelope"></i> Contact</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Classification and Segmentation</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Classification and Segmentation</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+<!--     <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-details-container">
+
+          <div class="owl-carousel portfolio-details-carousel">
+            <img src="assets/img/portfolio-details-1.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio-details-2.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio-details-3.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: Web design</li>
+              <li><strong>Client</strong>: ASU Company</li>
+              <li><strong>Project date</strong>: 01 March, 2020</li>
+              <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="portfolio-description">
+          <h2>This is an example of portfolio detail</h2>
+          <p>
+            Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+          </p>
+        </div>
+
+      </div>
+    </section> --><!-- End Portfolio Details Section -->
+
+
+    <!--Begin Portfolio Details Section -->
+<div class="container">
+<h1>CS 194 Project 4: Classification and Segmentation</h1>
+    <h3>Richard Chen</h3>
+    <p>In this project, we use convolutional neural networks (CNNs) to solve several classic computer vision problems: classification and segmentation.</p>
+  </header>
+
+  <h2>Part 1: Image Classification</h2>
+  <p>In this part, we implement a CNN to classify images from the Fashion MNIST Dataset which contains 10 classes, 60,000 training+validation images, and 10,000 test images. My neural network architecture includes 2 convolutional layers with 32 channels, followed by 2 fully connected layers. I used an ADAM optimizer and Cross Entropy loss, training for 10 epochs.</p>
+  
+  <div class="row">
+    <div class="column">
+      <p>Training accuracy</p>
+      <img src="assets/img/portfolio/classification/training_accuracy.png" style="width:90%">
+    </div>
+    <div class="column">
+      <p>Validation accuracy</p>
+      <img src="assets/img/portfolio/classification/validation_accuracy.png" style="width:90%">
+    </div>
+  </div>
+
+  <p>Shown above is the training and validation accuracy plotted during the training process. We can see training accuracy gradually increasing as time goes on which is to be expected. The validation accuracy initially jumps up, then stabilizes around 90% accuracy. This is good as it suggests it's fighting against overfitting.</p>
+
+  <p>Now let's look at the specific class accuracies for the validation and test set. This was made by calculating the confusion matrix and looking at the diagonal scores. We can see that the hardest classes to classify are shirts and tops.</p>
+  <div class="row">
+    <div class="column">
+      <p>Class accuracy of validation set</p>
+      <img src="assets/img/portfolio/classification/validation_class.png" style="width:70%">
+    </div>
+    <div class="column">
+      <p>Class accuracy of test set</p>
+      <img src="assets/img/portfolio/classification/test_class.png" style="width:70%">
+    </div>
+  </div>
+
+  <p>Now we can look at some of our results.</p>
+  <h1>Tops</h1>
+  <div class="row">
+    <div class="column">
+      <img src="assets/img/portfolio/classification/ctop1.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/ctop2.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/wtop1.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/wtop2.png" style="width:90%">
+    </div>
+  </div>
+
+  <h1>Trouser</h1>
+  <div class="row">
+    <div class="column">
+      <img src="assets/img/portfolio/classification/ctrouser1.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/ctrouser2.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/wtrouser1.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/wtrouser2.png" style="width:90%">
+    </div>
+  </div>
+
+  <h1>Pullover</h1>
+  <div class="row">
+    <div class="column">
+      <img src="assets/img/portfolio/classification/cpullover1.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/cpullover2.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/wpullover1.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/wpullover2.png" style="width:90%">
+    </div>
+  </div>
+
+  <h1>Dress</h1>
+  <div class="row">
+    <div class="column">
+      <img src="assets/img/portfolio/classification/cdress1.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/cdress2.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/wdress1.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/wdress2.png" style="width:90%">
+    </div>
+  </div>
+
+
+  <h1>Coat</h1>
+  <div class="row">
+    <div class="column">
+      <img src="assets/img/portfolio/classification/ccoat1.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/ccoat2.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/wcoat1.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/wcoat2.png" style="width:90%">
+    </div>
+  </div>
+
+
+  <h1>Sandal</h1>
+  <div class="row">
+    <div class="column">
+      <img src="assets/img/portfolio/classification/csandal1.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/csandal2.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/wsandal1.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/wsandal2.png" style="width:90%">
+    </div>
+  </div>
+
+  <h1>Shirt</h1>
+  <div class="row">
+    <div class="column">
+      <img src="assets/img/portfolio/classification/cshirt1.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/cshirt2.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/wshirt1.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/wshirt2.png" style="width:90%">
+    </div>
+  </div>
+
+  <h1>Sneaker</h1>
+  <div class="row">
+    <div class="column">
+      <img src="assets/img/portfolio/classification/csneaker1.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/csneaker2.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/wsneaker1.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/wsneaker2.png" style="width:90%">
+    </div>
+  </div>
+
+  <h1>Bag</h1>
+  <div class="row">
+    <div class="column">
+      <img src="assets/img/portfolio/classification/cbag1.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/cbag2.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/wbag1.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/wbag2.png" style="width:90%">
+    </div>
+  </div>
+
+  <h1>Ankle Boot</h1>
+  <div class="row">
+    <div class="column">
+      <img src="assets/img/portfolio/classification/cankle1.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/cankle2.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/wankle1.png" style="width:90%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/wankle2.png" style="width:90%">
+    </div>
+  </div>
+
+  <p>We can also visualize the learned convolutional filters, shown below.</p>
+  <div class="row">
+    <div class="column">
+      <img src="assets/img/portfolio/classification/filters.png" style="width:100%">
+    </div>
+  </div>
+
+  <h1>Part 2: Segmentation</h1>
+  <p>We can also use CNN's to do image segmentation for pixel by pixel classification. We train on the Mini Facade dataset over 35 epochs with an Adam optimizer of learning rate=1e-3, weight decay = 1e-5. The specific architecture is shown below and was based on a U-net with slight modifications. I added some additional fully connected layers, and also included batch norm layers to improve the AP score.</p>
+
+  <div class="row">
+    <div class="column">
+      <img src="assets/img/portfolio/classification/architecture.png" style="width:100%">
+    </div>
+  </div>
+  <p> Below we also show the training and validation loss during the training. We can see validation stabilizes after a couple of epochs.</p>
+
+  <div class="row">
+    <div class="column">
+      <img src="assets/img/portfolio/classification/train_loss.png" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/valid_loss.png" style="width:100%">
+    </div>
+  </div>
+
+
+  <p>The AP scores are shown below. They come out to an average AP score of 0.5128 The worst performing one is the one for pillars/columns. This makes sense intuitively to me because it's hard to distinguish columns to just empty space between windows and on walls.</p>
+
+
+  <div class="row">
+    <div class="column">
+      <img src="assets/img/portfolio/classification/ap.png" style="width:100%">
+    </div>
+  </div>
+
+  Now let's see how this behaved on an actual image. We display the segmented picture and the actual picture. It seems to have done well on recognizing where the windows and walls are. However we can see the pillar identification isn't great. The lighting could have made it confusing. This makes sense and matches what we saw from the AP scores. 
+  <div class="row">
+    <div class="column">
+      <img src="assets/img/portfolio/classification/y0.png" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="assets/img/portfolio/classification/x0.png" style="width:100%">
+    </div>
+  </div>
+  <br>
+  <br>
+
+</div>
+    <!-- End Portfolio Details Section -->
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
