@@ -36,6 +36,48 @@
   ======================================================== -->
 </head>
 
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+
 <body>
 
   <!-- ======= Mobile nav toggle button ======= -->
@@ -232,7 +274,7 @@
 
         <div class="section-title">
           <h2>Past Projects</h2>
-          <p>Below is a collection of some projects I've worked on in the past. I hope you enjoy them! </p>
+          <p>Below is a collection of some projects I've worked on in the past. Some were done for UC Berkeley's CS 194: Computational Photography class taught by the amazing Alexei Efros.</p>
 
         </div>
 
@@ -351,6 +393,37 @@
 
       </div>
     </section><!-- End Portfolio Section -->
+
+
+
+<!--Photography Section -->
+<!--     <section id="photography">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Photographs</h2>
+          <p>Here's a collection of photos I've taken in the past. I hope you enjoy them!</p>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <h3>Concerts<h3>
+            <div class="container">
+              <img src="assets/img/portfolio/self_portrait.jpg" class="image">
+              <div class="overlay">
+                <div class="text">Hello</div>
+              </div>
+            </div>
+            
+          </div>
+
+
+        </div>
+
+      </div>
+    </section> --><!-- End Portfolio Section -->
+
+
 
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills section-bg">
@@ -768,4 +841,3 @@ setTimeout(function() {
 
 
 </html>
->>>>>>> 3fde7a95d65f907ccce154dd68cafe6d72f4e5fa
