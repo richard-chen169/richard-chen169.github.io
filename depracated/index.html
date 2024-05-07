@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio</title>
+  <title>Richard Chen</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -27,9 +28,55 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-
-
+  <!-- =======================================================
+  * Template Name: iPortfolio - v1.2.1
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
+
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
 
 <body>
 
@@ -41,7 +88,7 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/square-profile.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/square-profile.png" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Richard Chen</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="https://www.youtube.com/channel/UCXCgxPLZV8QcKN8JP0pJmHQ" class="youtube"><i class="bx bxl-youtube"></i></a>
@@ -52,9 +99,9 @@
       <nav class="nav-menu">
         <ul>
           <li><a href="about.html"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="portfolio.html"><i class="bx bx-book-content"></i>Portfolio</a></li>
+          <li><a href="portfolio.html"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
           <li><a href="work.html"><i class="bx bx-book-content"></i>Work</a></li>
-
+          <li><a href="cv.html"><i class="bx bx-file"></i> <span>CV</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
       <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
@@ -62,90 +109,17 @@
     </div>
   </header><!-- End Header -->
 
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Richard Chen</h1>
+      <p>I'm a NYC based <span class="typed" data-typed-items="student, photographer"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
   <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2></h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>About</li>
-          </ol>
-        </div>
-
-      </div>
-    </section><!-- End Breadcrumbs -->
-
-
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p>I'm a NYC + DMV based photographer who likes taking pictures of landscapes and occasionally doing economics.
-            I'm interested in Industrial Organization and Agricultural Economics. You can find my CV <a href="resume.pdf" download></a>here</a>.
-          </p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <p>Some of my favorites.</p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>NBA team:</strong> Washington Wizards</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Drink:</strong> Water</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Color: </strong>Green </li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Book: </strong>If Cats Disappeared from the World </li>
-                </ul>
-              </div>
-            </div>
-            <p>You can contact me by email <a href="mailto: whoaitsrichard14@gmail.com">here</a></p>
-
-
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-
-
-
-
-
-
-
-
-
-
-
-<br>
-
-
-</div>
-
-</div>
-    <!-- End Portfolio Details Section -->
   </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-      </div>
-      <div class="credits">
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
@@ -168,3 +142,4 @@
 </body>
 
 </html>
+
