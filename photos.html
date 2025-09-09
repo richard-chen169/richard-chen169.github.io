@@ -10,29 +10,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <div id="header-div"></div>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Preload photos with lazy loading -->
-  <link rel="preload" as="image" href="photos/portfolio/portfolio-19.jpg" imagesrcset="photos/portfolio/portfolio-19.jpg" imagesizes="100vw">
-  <link rel="preload" as="image" href="photos/portfolio/portfolio-21.jpg" imagesrcset="photos/portfolio/portfolio-21.jpg" imagesizes="100vw">
-  <link rel="preload" as="image" href="photos/portfolio/portfolio-22.jpg" imagesrcset="photos/portfolio/portfolio-22.jpg" imagesizes="100vw">
-  <link rel="preload" as="image" href="photos/portfolio/portfolio-23.jpg" imagesrcset="photos/portfolio/portfolio-23.jpg" imagesizes="100vw">
-  <link rel="preload" as="image" href="photos/portfolio/portfolio-24.jpg" imagesrcset="photos/portfolio/portfolio-24.jpg" imagesizes="100vw">
-  <link rel="preload" as="image" href="photos/portfolio/portfolio-1.jpg" imagesrcset="photos/portfolio/portfolio-1.jpg" imagesizes="100vw">
-  <link rel="preload" as="image" href="photos/portfolio/portfolio-2.jpg" imagesrcset="photos/portfolio/portfolio-2.jpg" imagesizes="100vw">
-  <link rel="preload" as="image" href="photos/portfolio/portfolio-4.jpg" imagesrcset="photos/portfolio/portfolio-4.jpg" imagesizes="100vw">
-  <link rel="preload" as="image" href="photos/portfolio/portfolio-10.jpg" imagesrcset="photos/portfolio/portfolio-10.jpg" imagesizes="100vw">
-  <link rel="preload" as="image" href="photos/portfolio/portfolio-11.jpg" imagesrcset="photos/portfolio/portfolio-11.jpg" imagesizes="100vw">
-  <link rel="preload" as="image" href="photos/portfolio/portfolio-8.jpg" imagesrcset="photos/portfolio/portfolio-8.jpg" imagesizes="100vw">
-  <link rel="preload" as="image" href="photos/portfolio/portfolio-20.jpg" imagesrcset="photos/portfolio/portfolio-20.jpg" imagesizes="100vw">
-  <link rel="preload" as="image" href="photos/portfolio/portfolio-14.jpg" imagesrcset="photos/portfolio/portfolio-14.jpg" imagesizes="100vw">
-  <link rel="preload" as="image" href="photos/portfolio/portfolio-25.jpg" imagesrcset="photos/portfolio/portfolio-25.jpg" imagesizes="100vw">
-  <link rel="preload" as="image" href="photos/portfolio/portfolio-26.jpg" imagesrcset="photos/portfolio/portfolio-26.jpg" imagesizes="100vw">
-  <link rel="preload" as="image" href="photos/portfolio/portfolio-27.jpg" imagesrcset="photos/portfolio/portfolio-27.jpg" imagesizes="100vw">
-  <link rel="preload" as="image" href="photos/portfolio/portfolio-28.jpg" imagesrcset="photos/portfolio/portfolio-28.jpg" imagesizes="100vw">
-  <link rel="preload" as="image" href="photos/portfolio/portfolio-29.jpg" imagesrcset="photos/portfolio/portfolio-29.jpg" imagesizes="100vw">
+  <link rel="preload" as="image" href="photos/portfolio/portfolio-19.jpg">
+  <link rel="preload" as="image" href="photos/portfolio/portfolio-21.jpg">
+  <link rel="preload" as="image" href="photos/portfolio/portfolio-22.jpg">
+  <link rel="preload" as="image" href="photos/portfolio/portfolio-23.jpg">
+  <link rel="preload" as="image" href="photos/portfolio/portfolio-24.jpg">
+  <link rel="preload" as="image" href="photos/portfolio/portfolio-1.jpg">
+  <link rel="preload" as="image" href="photos/portfolio/portfolio-2.jpg">
+  <link rel="preload" as="image" href="photos/portfolio/portfolio-4.jpg">
+  <link rel="preload" as="image" href="photos/portfolio/portfolio-10.jpg">
+  <link rel="preload" as="image" href="photos/portfolio/portfolio-11.jpg">
+  <link rel="preload" as="image" href="photos/portfolio/portfolio-8.jpg">
+  <link rel="preload" as="image" href="photos/portfolio/portfolio-20.jpg">
+  <link rel="preload" as="image" href="photos/portfolio/portfolio-14.jpg">
+  <link rel="preload" as="image" href="photos/portfolio/portfolio-25.jpg">
+  <link rel="preload" as="image" href="photos/portfolio/portfolio-26.jpg">
+  <link rel="preload" as="image" href="photos/portfolio/portfolio-27.jpg">
+  <link rel="preload" as="image" href="photos/portfolio/portfolio-28.jpg">
+  <link rel="preload" as="image" href="photos/portfolio/portfolio-29.jpg">
+  <style>
+    .item img {
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+    .item img.loaded {
+      opacity: 1;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.querySelectorAll('.item img').forEach(function(img) {
+        img.addEventListener('load', function() {
+          img.classList.add('loaded');
+        });
+        // If already cached
+        if (img.complete) {
+          img.classList.add('loaded');
+        }
+      });
+    });
+  </script>
 </head>
 
 
